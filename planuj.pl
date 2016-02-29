@@ -2,6 +2,12 @@
 #Paweł Wiśniewski PJS_gr1
 
 use Plan::Bib;
+use Getopt::Std;
+
+getopts('h');
+if( $opt_h ){
+	Plan::Bib::pomoc();
+}
 
 print "Witaj w programie planuj wycieczkę!\n\n";
 

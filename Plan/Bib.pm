@@ -24,7 +24,7 @@ sub open_track {
 
 sub pomoc {
 	print "Planuj - skrypt do szybkiego wyboru wycieczek górskich! Wymagane połączenie z Internetem!\n\n";
-	print "/planuj.pl [opcje]\n\n";
+	print "./planuj.pl [opcje]\n\n";
 	print "Opcje:\n-h/--help\t-\turuchamia pomoc (to co czytasz!).\n\n\n";
 
 	print "Instrukcja działania:\nSkrypt zada Ci serię pytań dotyczących Twoich planów i preferencji.\n";
