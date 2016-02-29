@@ -4,7 +4,9 @@
 use Plan::Bib;
 use Getopt::Std;
 
-getopts('h');
+if( !getopts('h') ){
+	die "./planuj.pl -h to help\n";
+}
 if( $opt_h ){
 	Plan::Bib::pomoc();
 }
