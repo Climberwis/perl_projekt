@@ -1,18 +1,16 @@
 #!/usr/bin/perl
 #Paweł Wiśniewski PJS_gr1
 
-sub sprawdz_liczba {
-my($zakres, $sprawdz) = @_;
-	if( !($sprawdz =~ m{^\d+$}o) || $sprawdz==0 || $sprawdz > $zakres){
-		print "Nie rozpoznano odpowiedzi!\n";
-}}
-
-sub open_track {
-my($url) = @_;
-system("x-www-browser \"$url\"");
-}
+use Plan::Bib;
 
 #foreach $wejscie (@ARGV)
+#Tutaj help
+
+print "Witaj w programie planuj wycieczkę!\n\n";
+
+print "Podaj jaką masz kondycję:\n[1] - Słaba\n[2] - przeciętna\n[3] - dobra\n[h] - pomoc w wyborze\n\n";
+
+$kondycja = <>;
 
 
 
