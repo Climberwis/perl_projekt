@@ -3,9 +3,6 @@
 
 use Plan::Bib;
 
-#foreach $wejscie (@ARGV)
-#Tutaj help
-
 print "Witaj w programie planuj wycieczkę!\n\n";
 
 while(1){
@@ -46,6 +43,3 @@ while(1){
 		last;
 	}
 }
-
-
-print "Works!\n";
