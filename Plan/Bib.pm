@@ -1,12 +1,21 @@
 #!/usr/bin/perl
 
+
 package Plan::Bib;
 
-sub sprawdz_liczba {
+
+
+sub sprawdz_odp {
 	my($zakres, $sprawdz) = @_;
+		if( $sprawdz=~ m/^(h|H)/ ){
+			pomoc();
+		}
 		if( !($sprawdz =~ m{^\d+$}o) || $sprawdz==0 || $sprawdz > $zakres){
-			print "Nie rozpoznano odpowiedzi!\n";
-}}
+			print "Nie rozpoznano odpowiedzi!\n\n";
+			return 0;
+		}
+	return 1;
+}
 
 sub open_track {
 	my($url) = @_;
@@ -15,6 +24,6 @@ sub open_track {
 
 sub pomoc {
 	my($krok) = @_;
-	print "to: $krok\n"
+	die "Pomoc :)"
 }
 1;
