@@ -1,8 +1,26 @@
 #!/usr/bin/perl
 #Paweł Wiśniewski PJS_gr1
 
-use Plan::Bib;
+sub use_dir {
+	my ($dirname) = @_;
+	if($dirname eq "."){
+	}
+	else {
+		$dirname = join('::', split('/', $dirname));
+	}
+}
+
 use Getopt::Std;
+use File::Basename;
+
+$dirname = dirname($0);
+$dirname = use_dir($dirname);
+
+use FindBin;
+use lib "$FindBin::RealBin/$dirname";
+use Plan::Bib;
+
+
 
 if( !getopts('h') ){
 	die "./planuj.pl -h to help\n";

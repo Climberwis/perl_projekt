@@ -1,9 +1,6 @@
 #!/usr/bin/perl
 
-
 package Plan::Bib;
-
-
 
 sub sprawdz_odp {
 	my($zakres, $sprawdz) = @_;
@@ -89,14 +86,3 @@ sub pomoc {
 }
 1;
 
-
-
-#3 lekkie spacery do 4 godzin
-#3 lekkie spacery do 6 godzin
-#3 lekkie do 4 godzin
-#3 lekkie do 6 godzin
-#3 lekkie do 8 godzin
-#3 średnie do 6
-#3 średnie do 8
-#3 trudne do 8
-#3 trudne wyrypy
