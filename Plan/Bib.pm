@@ -16,7 +16,8 @@ sub sprawdz_odp {
 
 sub open_track {
 	my($url) = @_;
-	system("x-www-browser \"$url\"");
+	system("x-www-browser \"$url\"") == 0 or
+	print "Otwieranie przeglądarki bez x-ów nie ma szans na powodzenie :D\n";
 }
 
 sub trasy {
